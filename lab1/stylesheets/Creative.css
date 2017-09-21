@@ -1,61 +1,127 @@
-
-
-#body{
+#body {
   background-color: white;
-
-
 }
 
-/*.sect{
-  background-color: grey;
-  width:100%;
-  height:30%;
+#mainBanner {
+  width: 100%;
+  height: 130px;
+}
+
+#banner {
+  padding: 40px 0px 0px;
+  width: 82%;
+  height: 80px;
+  clear: both;
+  float: right;
+  color: black;
+  background-color: red;
+  font-family: ar delaney;
   text-align: center;
+  font-size: 40px;
+}
 
+.sect {
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+  border-style: double;
+  border-color: black;
+}
 
-}*/
+#art1 {
+  padding: 5px;
+  text-align: justify;
+}
 
-#container{
-  margin-left:15%;
-  margin-right: 15%;
+#container {
+  margin-left: 10%;
+  margin-right: 10%;
   margin-top: 5%;
-  margin-bottom:5%;
+  margin-bottom: 5%;
   background-color: red;
   height: auto;
   width: auto;
-
 }
 
-#nav{
-
-  width:100%;
-  height:40%;
-  background-color: yellow;
-
+#nav {
+  width: 100%;
+  height: 40%;
+  background-color: green;
 }
 
+#navbar {
+  margin-top: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: red;
+  font-family: ar delaney;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
 
+a:hover {
+  color: black;
+}
 
-#sidebar{
-  float:left;
+a:link {
+  color: black
+}
+
+a:hover {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sidebarColor {
+  background-color: green;
+  height: 510px;
+  width: 638px;
+}
+
+#sidebar {
+  float: left;
   background-color: green;
   height: auto;
   width: 30%;
-
 }
 
-#main{
-
+#main {
   background-color: blue;
-  float:right;
+  /*float:right;*/
   height: auto;
-  width: 70%;
-
-
+  width: auto;
 }
 
-#footer{
-  background-color: pink;
-  width:100%;
-  height:30%;
+#grades {
+  background-color: white;
+  border-color: red;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+#footer {
+  background-color: red;
+  width: 100%;
+  height: 100px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 }
