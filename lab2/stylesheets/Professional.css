@@ -1,0 +1,131 @@
+* {
+  font-family: cursive;
+}
+
+#body {
+  background-color: #FFFFD7;
+}
+
+#mainBanner {
+  width: 100%;
+  height: 130px;
+}
+
+#banner {
+  padding: 40px 0px 0px;
+  width: 82%;
+  height: 80px;
+  clear: both;
+  float: right;
+  color: black;
+  background-color: #f4e6ff;
+  font-family: ar delaney;
+  text-align: center;
+  font-size: 40px;
+}
+
+.sect {
+  background-color: #e6e6e6;
+  padding: 10px;
+  text-align: center;
+  border-style: double;
+  border-color: black;
+}
+
+#art1 {
+  padding: 5px;
+  text-align: justify;
+}
+
+#container {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-color: #f4e6ff;
+  height: auto;
+  width: auto;
+}
+
+#nav {
+  width: 100%;
+  height: 40%;
+  background-color: #480080;
+}
+
+#navbar {
+  margin-top: 10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  color: white;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: white;
+  font-family: ar delaney;
+  overflow: hidden;
+  vertical-align: middle;
+  text-align: center;
+}
+
+a:hover {
+  color: black;
+}
+
+a:link {
+  color: black
+}
+
+a:hover {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+  color: grey;
+}
+
+a:hover {
+  color: yellow;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#sidebarColor {
+  background-color: green;
+  height: 510px;
+  width: 638px;
+}
+
+#sidebar {
+  float: left;
+  background-color: green;
+  height: auto;
+  width: 30%;
+}
+
+#main {
+  background-color: blue;
+  /*float:right;*/
+  height: auto;
+  width: auto;
+}
+
+#grades {
+  background-color: white;
+  border-color: purple;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+#footer {
+  background-color: #f4e6ff;
+  width: 100%;
+  height: 100px;
+  color: grey;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
