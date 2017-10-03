@@ -1,6 +1,8 @@
+
 * {
   font-family: cursive;
 }
+
 
 #body {
   background-color: #FFFFD7;
@@ -110,6 +112,7 @@ a:hover {
   /*float:right;*/
   height: auto;
   width: auto;
+
 }
 
 #grades {

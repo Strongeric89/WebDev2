@@ -1,6 +1,6 @@
 //The following changes the stylesheet
 
-  alert("javascript is working");
+  alert("Welcome to Eric Strongs Website");
 
 
   function swapStyleSheet(sheet) {
