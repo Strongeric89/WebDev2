@@ -1,0 +1,100 @@
+*{
+  padding:0;
+  margin:0;
+}
+
+html, body{
+  height:100%;
+  background-color: #FFFFD7;
+
+}
+
+#container{
+  background-image: url(../images/image1.jpg);
+  width: auto;
+  height: 100%;
+  margin-top:5%;
+  margin-left: 10%;
+  margin-right:10%;
+  margin-bottom: 5%;
+  border-left: 5px;
+  border-right: 5px;
+  border-color: black;
+  box-shadow: 5px 2px 5px 2px;
+
+
+}
+
+h1{
+  font-size: 100px;
+  font-family: cursive;
+  color: purple;
+}
+
+#gameArea{
+
+  width: auto;
+  height: 400px;
+  margin-top:5%;
+  margin-left: 10%;
+  margin-right:10%;
+  margin-bottom: 15%;
+    border-color: black;
+    border-style: double;
+  background-color: lightblue;
+
+
+}
+
+#startText{
+  font-size: 50px;
+  color:black;
+  font-style: italic;
+  margin-top:50%;
+  margin-left: 30%;
+}
+
+
+#gameArea2{
+
+  width: auto;
+  height: 400px;
+  margin-top:5%;
+  margin-left: 10%;
+  margin-right:10%;
+  margin-bottom: 15%;
+  border-color: black;
+  border-style: double;
+  background-color: lightblue;
+
+
+}
+
+#gameTable{
+  color:black;
+
+}
+
+#gameTable td{
+  height:125px;
+  text-align: center;
+}
+
+#gameTable td:hover{
+  color:white;
+  border-color: white;
+  border: 3px solid red;
+
+}
+
+
+
+
+footer{
+
+margin: 1%;
+height:55px;
+
+background-color: purple;
+color:white;
+}
