@@ -54,6 +54,11 @@ h1{
   margin-left: 30%;
 }
 
+#count-up{
+  font-size:30px;
+
+}
+
 
 #gameArea2{
 
@@ -83,18 +88,20 @@ h1{
 #gameTable td:hover{
   color:white;
   border-color: white;
-  border: 3px solid red;
+  border-style: dotted;
+  border-color: red;
 
 }
-
+#color-is{
+  font-size: 20px;
+}
 
 
 
 footer{
 
 margin: 1%;
-height:55px;
-
+height:auto;
 background-color: purple;
 color:white;
 }
