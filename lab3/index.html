@@ -9,18 +9,20 @@
   <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body onload="startImage(); hide('gameArea2'); hide('count-up');">
+<body onload="startImage(); hide('gameArea2'); hide('count-up'); hide('panel')">
+
+
 
   <div id="container">
 
     <h1 align="center">Color Learning Game</h1>
 
-
+<div id="panel">
   <h1 id="count-up" align="center">0:00</h1>
 
-  <h5 id="color-is" align="center">Color is</h5>
+  <h5 id="color-is" align="center">Color is: </h5>
 
-
+  </div>
 
     <div id="gameArea" onclick="hide('gameArea');show('gameArea2');">
         <span id="startText">     Click to Start    </span>

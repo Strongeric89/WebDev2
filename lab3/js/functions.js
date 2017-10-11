@@ -1,7 +1,3 @@
-function hello(){
-  alert("Javascript is working");
-}
-
 function startImage()
 {
     var myElement = document.getElementById("gameArea");
@@ -17,27 +13,54 @@ function hide(target) {
 
 function show(target) {
     document.getElementById(target).style.display = '';
+    document.getElementById('panel').style.display = '';
     timer();
     tableCreate();
 }
 
 function tableCreate(){
 
+      var count = 0;
 
       var tbl  = document.createElement('table');
       tbl.setAttribute("id", "gameTable");
       tbl.style.width  = '100%';
       tbl.style.border = '1px solid black';
+      tbl.onclick = function() {
+        var flag;
+        count +=1;
+        if(count == 36){
 
-    for(var i = 0; i < 3; i++){
+          var gametime = document.getElementById("count-up").innerText;
+          document.getElementById("panel").innerText = 'GAME OVER';
+
+          flag = document.getElementById("panel").innerText;
+
+
+
+          if(flag === 'GAME OVER'){
+
+            setTimeout(
+            function () {
+              alert('GAME OVER! \n\nYour time was ' + gametime);
+              location.reload();}, 1500);
+          }
+
+        }
+      }
+
+
+
+
+
+    for(var i = 0; i < 6; i++){
         var tr = tbl.insertRow();
-        for(var j = 0; j < 3; j++){
+        for(var j = 0; j < 6; j++){
           var td = tr.insertCell();
           var color = getRandomColor();
           td.appendChild(document.createTextNode(' '));
           td.style.border = '3px solid black';
           td.style.backgroundColor = color;
-          //td.onclick = displayColor(color);
           td.onclick = blacken(td, color);
 
         }// end for
@@ -45,20 +68,33 @@ function tableCreate(){
       var div = document.getElementById('gameArea2');
       div.appendChild(tbl);
 
+
+
 }
 
-// function displayColor(color){
-//
-//     return function(){
-//
-//         document.getElementById("color-is").innerText = color;
-//         document.getElementById("color-is").style.color = color;
-//
-//     }
-// }
+
+
 
 function blacken(td,color){
   return function(){
+
+    td.onclick = function() {
+      count +=1;
+      if(count >= 3){
+
+
+        var gametime = document.getElementById("count-up").innerText;
+
+        alert('GAME OVER! \n\nYour time was ' + gametime);
+
+        document.getElementById("count-up").innerText = '0:00';
+        location.reload();
+
+
+      }
+    }
+
+
     td.style.backgroundColor = 'black';
     document.getElementById("color-is").innerText = color;
     document.getElementById("color-is").style.color = color;

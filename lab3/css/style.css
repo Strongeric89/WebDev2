@@ -12,7 +12,7 @@ html, body{
 #container{
   background-image: url(../images/image1.jpg);
   width: auto;
-  height: 100%;
+  height: auto;
   margin-top:5%;
   margin-left: 10%;
   margin-right:10%;
@@ -34,7 +34,7 @@ h1{
 #gameArea{
 
   width: auto;
-  height: 400px;
+  height: 300px;
   margin-top:5%;
   margin-left: 10%;
   margin-right:10%;
@@ -59,11 +59,24 @@ h1{
 
 }
 
+#panel{
+  width: auto;
+  height: 100px;;
+  margin-top:5%;
+  margin-left: 10%;
+  margin-right:10%;
+  margin-bottom: 15%;
+  border-color: black;
+  border-style: double;
+  background-color: lightblue;
+
+}
+
 
 #gameArea2{
 
   width: auto;
-  height: 400px;
+  height: auto;
   margin-top:5%;
   margin-left: 10%;
   margin-right:10%;
@@ -100,7 +113,7 @@ h1{
 
 footer{
 
-margin: 1%;
+margin: 3%;
 height:auto;
 background-color: purple;
 color:white;
