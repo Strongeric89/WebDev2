@@ -34,6 +34,7 @@ function tableCreate(){
           var gametime = document.getElementById("count-up").innerText;
           document.getElementById("panel").innerText = 'GAME OVER';
 
+
           flag = document.getElementById("panel").innerText;
 
 
@@ -104,7 +105,8 @@ function blacken(td,color){
 
 function getRandomColor () {
 
-  var myColors = ['blue', 'green', 'red', 'orange', 'purple', 'pink', 'gray'];
+  //var myColors = ['blue', 'green', 'red', 'orange', 'purple', 'pink', 'gray'];
+  var myColors = ['blue', 'green', 'red', 'orange', 'purple', 'pink']; // PART 5
   var rand = myColors[Math.floor(Math.random() * myColors.length)];
   return rand;
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>lab 4</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script></script>
+</head>
+
+<body>
+
+  <h1>Lab 4 - form validation</h1>
+
+  <div id="container">
+
+
+    <form name="personal_info" id="personal_info" onsubmit="return check_form();">
+
+      <table align="center" border="0">
+        <tbody>
+            <h1>Personal Information</h1>
+            <br>
+          <tr>
+            <td class="name">
+              Name:
+            </td>
+            <td class="data">
+              <input type="text" name="name_text" id="name_text" width="20" maxlength="40" size="20">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">
+              E-mail address:
+            </td>
+            <td class="data">
+              <input type="text" name="email_text" id="email_text" width="20" maxlength="40" size="20">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">
+              Date of Birth (DD/MM/YYYY):
+            </td>
+            <td class="data">
+              <input type="text" name="day_text" id="day_text" maxlength="2" size="2">/
+              <input type="text" name="month_text" id="month_text" maxlength="2" size="2">/
+              <input type="text" name="year_text" id="year_text" maxlength="4" size="4">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">
+              Gender:
+            </td>
+            <td class="data">
+              <select name="select_gender" id="select_gender">
+			<option value="None"></option>
+			<option value="F">Female</option>
+			<option value="M">Male</option>
+		</select>
+            </td>
+          </tr>
+          <tr>
+            <td class="name">
+              Street address (line 1):
+            </td>
+            <td class="data">
+              <input type="text" name="addr1_text" id="addr1_text" width="6" size="6" maxlength="5">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">
+              Street address (line 2):
+            </td>
+            <td class="data">
+              <input type="text" name="addr2_text" id="addr2_text" width="6" size="6" maxlength="5">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">
+              City:
+            </td>
+            <td class="data">
+              <input type="text" name="city_text" id="city_text" width="6" size="6" maxlength="5">
+            </td>
+          </tr>
+          <tr>
+            <td class="name">
+              ZIP code:
+            </td>
+            <br>
+            <td class="data">
+              <input type="text" name="zip_text" id="zip_text" width="6" size="6" maxlength="5">
+            </td>
+          </tr>
+
+          <tr>
+
+            <td class="name">
+              <input type="button" value="Submit" onclick="check_form();">
+              <!-- if type="submit", on validation error clears the entire form -->
+            </td>
+            <td class="data">
+              <input type="reset" value="Clear">
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </form>
+  </div>
+  <script src="js/functions.js"></script>
+
+</body>
+
+</html>
