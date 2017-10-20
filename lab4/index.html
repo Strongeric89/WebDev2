@@ -46,7 +46,8 @@
             <td class="data">
               <input type="text" name="day_text" id="day_text" maxlength="2" size="2">/
               <input type="text" name="month_text" id="month_text" maxlength="2" size="2">/
-              <input type="text" name="year_text" id="year_text" maxlength="4" size="4">
+              <input type="text" name="year_text" id="year_text"  onclick="isleap();" maxlength="4" size="4">
+
             </td>
           </tr>
           <tr>
@@ -54,8 +55,8 @@
               Gender:
             </td>
             <td class="data">
-              <select name="select_gender" id="select_gender">
-			<option value="None"></option>
+              <select name="select_gender" id="select_gender" required>
+			<option value="">None</option>
 			<option value="F">Female</option>
 			<option value="M">Male</option>
 		</select>
