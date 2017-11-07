@@ -45,13 +45,13 @@
   <div id="container">
 
 
-    <form name="myform" id="myform"  onSubmit="hideForm();">
+    <form name="myform" id="myform" onsubmit="return validate(false);">
 
             <h1>Personal Information</h1>
             <br>
               Name:  <input type="text" name="name"  width="20" maxlength="40" size="20">
       <br>
-          E-mail address:  <input type="email" name="email"  width="20" maxlength="40" size="20">
+          E-mail address:  <input id="email" type="email" name="email"  width="20" maxlength="40" size="20">
       <br>
           Date of Birth (DD/MM/YYYY):
           <input type="text" id="pickdate" size="8" name="date">
@@ -72,26 +72,30 @@
       <br>
               ZIP code:  <input type="text" name="zip" width="6" size="6" maxlength="5">
 
-                  <br>  <input type="submit" value="Submit" onClick=" validate();">
+                  <br>  <input type="submit" value="Submit">
       <br>
 
                   <br>  <input type="reset" value="Clear">
 
     </form>
 
+<script>
+$('form[name=myform]').submit(function(e) {
+if (validate()) {
+  alert('form sent!!');
+  return false; // or e.preventDefault();
+}
+})
+
+</script>
+
+
 
 
 
   </div>
 
-  <script>
-  function hideForm(){
-        var form = document.myform;
-        alert('Thank you for your details');
 
-  }
-
-  </script>
 
 
 </body>
