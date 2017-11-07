@@ -1,5 +1,5 @@
 
-function validate(flag) {
+function validate() {
 
   flag = false;
   //get all the elements first
@@ -20,24 +20,16 @@ function validate(flag) {
   var month = date1.getMonth() + 1;
   var year = date1.getFullYear();
 
-
-
-
-
   //a. validation - all fields mandatory
   if (name.length == 0) {
-
-
 
     alert('you must enter a name: Eric Strong');
       document.myform.name.focus();
       return false;
     flag = false;
 
-
   }
   if (email.length == 0) {
-
 
     //document.getElementById("email").focus();
       alert('you must enter an email: example@domain.com');
@@ -112,11 +104,8 @@ function validate(flag) {
   }
 
   if (zip.length == 0) {
-
-
       alert('you must enter a zip: example Db 1');
       document.myform.zip.focus();
-
               flag = false;
                 return false;
 
@@ -146,8 +135,6 @@ function validate(flag) {
 
   if(flag == true){
       alert('Thank you for your details');
-      var x = document.getElementById("container");
-      x.style.display = "none";
 
       return true;
 
@@ -155,8 +142,6 @@ function validate(flag) {
   }else{
     return false;
   }
-
-
 
 } //end validate
 
@@ -229,8 +214,6 @@ function validDate(day,month,year){
         return true;
   }
 
-
-
 }//end validateDate
 
 function isleap(yr)
@@ -256,7 +239,7 @@ function isleap(yr)
 }
 
 function validateGender(gender){
-  if(gender == "X"){
+  if(gender == ""){
     alert("you cannot leave gender blank");
             return false;
   }
