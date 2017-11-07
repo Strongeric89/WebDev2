@@ -9,6 +9,11 @@ html, body{
 
 }
 
+.red{
+  color:red;
+  
+}
+
 #container{
   /*background-image: url(../images/image1.jpg);*/
   width: auto;
@@ -25,7 +30,7 @@ html, body{
 
 }
 
-#personal_info{
+#myform{
   border:6px;
   border-style: double;
   border-color: blue;

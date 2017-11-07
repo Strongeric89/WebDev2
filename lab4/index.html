@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,110 +8,91 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>lab 4</title>
   <link rel="stylesheet" href="css/style.css">
-  <script></script>
+  <script src="js/functions.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+  <script>
+  $(document).ready(function(){
+
+    $('h1').addClass('red');
+
+    $( function() {
+    $( "#pickdate" ).datepicker();
+  } );
+
+
+  });
+
+  </script>
+
+
 </head>
 
 <body>
 
-  <h1>Lab 4 - form validation</h1>
+  <script type="text/javascript">
+
+
+
+  </script>
+
+  <h1 id="heading">Lab 4 - Form Validation</h1>
 
   <div id="container">
 
 
-    <form name="personal_info" id="personal_info" onsubmit="return check_form();">
+    <form name="myform" id="myform"  onSubmit="hideForm();">
 
-      <table align="center" border="0">
-        <tbody>
             <h1>Personal Information</h1>
             <br>
-          <tr>
-            <td class="name">
-              Name:
-            </td>
-            <td class="data">
-              <input type="text" name="name_text" id="name_text" width="20" maxlength="40" size="20">
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              E-mail address:
-            </td>
-            <td class="data">
-              <input type="text" name="email_text" id="email_text" width="20" maxlength="40" size="20">
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Date of Birth (DD/MM/YYYY):
-            </td>
-            <td class="data">
-              <input type="text" name="day_text" id="day_text" maxlength="2" size="2">/
-              <input type="text" name="month_text" id="month_text" maxlength="2" size="2">/
-              <input type="text" name="year_text" id="year_text"  onclick="isleap();" maxlength="4" size="4">
+              Name:  <input type="text" name="name"  width="20" maxlength="40" size="20">
+      <br>
+          E-mail address:  <input type="email" name="email"  width="20" maxlength="40" size="20">
+      <br>
+          Date of Birth (DD/MM/YYYY):
+          <input type="text" id="pickdate" size="8" name="date">
+           <!-- <input type="text" name="day" maxlength="2" size="2">/<input type="text" name="month" maxlength="2" size="2"> /<input type="text" name="year" maxlength="4" size="4">      <br> -->
 
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Gender:
-            </td>
-            <td class="data">
-              <select name="select_gender" id="select_gender" required>
-			<option value="">None</option>
+          Gender:<select name="gender">
+			<option value="X">None</option>
 			<option value="F">Female</option>
 			<option value="M">Male</option>
 		</select>
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Street address (line 1):
-            </td>
-            <td class="data">
-              <input type="text" name="addr1_text" id="addr1_text" width="6" size="6" maxlength="5">
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              Street address (line 2):
-            </td>
-            <td class="data">
-              <input type="text" name="addr2_text" id="addr2_text" width="6" size="6" maxlength="5">
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              City:
-            </td>
-            <td class="data">
-              <input type="text" name="city_text" id="city_text" width="6" size="6" maxlength="5">
-            </td>
-          </tr>
-          <tr>
-            <td class="name">
-              ZIP code:
-            </td>
-            <br>
-            <td class="data">
-              <input type="text" name="zip_text" id="zip_text" width="6" size="6" maxlength="5">
-            </td>
-          </tr>
+          <br>
 
-          <tr>
+              Street address (line 1):  <input type="text" name="addr1" width="6" size="6" maxlength="5">
+      <br>
+              Street address (line 2):  <input type="text" name="addr2" width="6" size="6" maxlength="5">
+      <br>
+              City:  <input type="text" name="city" width="6" size="6" maxlength="5">
+      <br>
+              ZIP code:  <input type="text" name="zip" width="6" size="6" maxlength="5">
 
-            <td class="name">
-              <input type="button" value="Submit" onclick="check_form();">
-              <!-- if type="submit", on validation error clears the entire form -->
-            </td>
-            <td class="data">
-              <input type="reset" value="Clear">
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                  <br>  <input type="submit" value="Submit" onClick=" validate();">
+      <br>
+
+                  <br>  <input type="reset" value="Clear">
+
     </form>
+
+
+
+
   </div>
-  <script src="js/functions.js"></script>
+
+  <script>
+  function hideForm(){
+        var form = document.myform;
+        alert('Thank you for your details');
+
+  }
+
+  </script>
+
 
 </body>
 
