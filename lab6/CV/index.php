@@ -68,7 +68,7 @@ include 'database.php';
     </div>
 
 
-      <div id="main" style="background-color: #480080;">
+      <div id="main" style="background-color:yellow;">
 
         <div class="w3-content" style="max-width:1200px;   background-color: #480080" >
           <img class="mySlides" src="images/sp1.jpg" style="width:100%">
@@ -94,14 +94,18 @@ include 'database.php';
 
 
 
-
-
         <section class="sect">
           <button id="stylesheet1" >Creative</button>
           <button id="stylesheet2" >Professional</button>
 
 
         </section>
+
+        <div id="demo">
+          <section class="sect" style=" color:white;">
+            <button id="" onclick="loadDoc()" >Show Cover Letter</button>
+          </section>
+        </div>
 
 
 
@@ -329,6 +333,8 @@ include 'database.php';
 <script src="js/Time.js"></script>
 <script src="js/slideshow.js"></script>
   <script src="js/switchStyle.js"></script>
+  <!-- lab 8 ajax -->
+  <script src="js/loadTextFile.js"></script>
 </body>
 
 </html>

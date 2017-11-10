@@ -32,6 +32,7 @@
   text-align: center;
   border-style: double;
   border-color: black;
+
 }
 
 #art1 {
@@ -51,8 +52,10 @@
 
 #nav {
   width: 100%;
-  height: 40%;
+  height: 20%;
   background-color: #480080;
+  color:white !important;
+
 }
 
 #navbar {
@@ -88,6 +91,11 @@ a {
   color: grey;
 }
 
+a:link
+{
+  color:white;
+}
+
 a:hover {
   color: yellow;
   text-decoration: none;
@@ -121,6 +129,7 @@ a:hover {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
+
 }
 
 #footer {
