@@ -1,14 +1,19 @@
 * {
-  font-family: cursive;
+  font-family:fantasy;
 }
 
 #body {
-  background-color: #FFFFD7;
+  background-color: #ffffe6;
+  background-image: url(../images/bg1.jpg);
+
+
+
 }
 
 #mainBanner {
   width: 100%;
   height: 130px;
+
 }
 
 #banner {
@@ -22,6 +27,7 @@
   font-family: ar delaney;
   text-align: center;
   font-size: 40px;
+
 }
 
 .sect {
@@ -44,7 +50,8 @@
   margin-bottom: 5%;
   background-color: #f4e6ff;
   height: auto;
-  width: auto;
+  border-color: black;
+box-shadow: 5px 2px 5px 2px;
 }
 
 #nav {
