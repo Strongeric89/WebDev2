@@ -1,0 +1,36 @@
+[
+  {
+    "name":"Eric Strong",
+    "age":28,
+    "hairColor":"black"
+  },
+  {
+    "name":"Laura Bermingham",
+    "age":27,
+    "hairColor":"brown"
+  },
+
+  {
+    "name":"Bruce Wayne",
+    "age":50,
+    "hairColor":"grey"
+  },
+
+  {
+    "name":"Gerard Strong",
+    "age":30,
+    "hairColor":"black"
+  },
+  {
+    "name":"Dave Bermingham",
+    "age":56,
+    "hairColor":"grey"
+  },
+
+  {
+    "name":"Princess Strong",
+    "age":6,
+    "hairColor":"black/white"
+  }
+
+]

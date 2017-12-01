@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Lab test c15708709</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- jquery -->
+    <script src="jquery.js"></script>
+
+
+
+
+  </head>
+  <body>
+
+    <input type="Button" id="startButton" name="button" onclick="generateTable();" value="START!">
+
+    <div id="timer">30</div>
+      <div id="points">0</div>
+        <input type="Button" id="colorName" name="button" value="Color">
+
+    <div id="nodeArea" style="width=500px; height=500px;">
+
+    <div id="gameArea"></div>
+
+
+
+
+
+  <script>
+
+  var currentColorInButton = "color";
+
+
+  function setButtonColorName(){
+
+    var color = getRandomColor();
+
+
+
+
+    console.log(color);
+
+    var b = document.getElementById('colorName').value = color;
+    currentColorInButton = color;
+
+
+  }
+
+  function generateTable() {
+    setButtonColorName();
+    timer();
+
+    document.getElementById('startButton').style.display = 'none';
+
+    var parent = document.getElementById('nodeArea'); // find the div to put the table in
+    var child = document.createElement('table');
+
+    child.style.width = '100%';
+    child.style.border = '1px solid black';
+    child.setAttribute('id', 'table1'); // give the table an id so you can select it
+
+
+    //add rows to table
+    for (var i = 0; i < 4; i++) {
+      var tr = child.insertRow();
+      for (var j = 0; j < 6; j++) {
+        var td = tr.insertCell();
+
+        var color = getRandomColor();
+
+        td.appendChild(document.createTextNode(""));
+        td.style.border = '3px solid black';
+        td.style.width = '40px';
+          td.style.height = '40px';
+        td.setAttribute('id',color);
+        td.style.backgroundColor = '' + color;
+        td.onclick = handleOnClick;
+
+        parent.appendChild(child);
+
+      } //end inner for
+    } //end outter for
+
+  }
+
+  function getRandomColor () {
+
+    var myColors = ['navy', 'purple', 'lime', 'maroon', 'salmon', 'olive'];
+    var rand = myColors[Math.floor(Math.random() * myColors.length)];
+    return rand;
+
+  }
+
+
+
+
+
+  function handleOnClick() {
+
+  //  alert('ouch!you clicked me once, try again, notice the onclick is gone!!' + this.id);
+
+
+    //remove the attribute
+    var id = this.id;
+
+    //document.getElementById(id).onclick = null;
+  //  this.style.backgroundColor = "black";
+
+
+   var points = parseInt(document.getElementById('points').innerHTML);
+   console.log(points, currentColorInButton,id);
+   if(currentColorInButton == id){
+     alert("you got 1");
+
+        points += 1;
+         document.getElementById('points').innerHTML = points;
+         setButtonColorName();
+   }
+
+
+
+
+
+
+  }
+
+
+  function timer(){
+  document.getElementById('timer').style.display = '';
+
+      var second = 30;
+      var counterId = setInterval(function(){
+                        countDown();
+                      }, 1000);
+
+      function countDown () {
+        if(second == 0){
+        slide();
+        //document.getElementById('timer').style.display = 'none';
+          var mypoints = parseInt(document.getElementById('points').innerHTML);
+          var name = prompt('Game Over!\n you scored ' + mypoints, "please insert your name");
+        }
+          second--;
+        document.getElementById("timer").innerText = second;
+
+
+      }
+
+  }
+
+  function slide(){
+    $(document).ready(function(){
+      //alert('jquery is working');
+      $('#timer').slideUp(1000);
+    });
+  }
+
+
+
+
+  </script>
+
+  </body>
+</html>
